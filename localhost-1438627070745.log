@@ -1,0 +1,27 @@
+clezer = new PouchDB('teste')
+i {__opts: Object, auto_compaction: undefined, prefix: "_pouch_", _events: Object, _maxListeners: undefined…}
+clezer.put({_id: 'aragon',age: 34})
+Promise {[[PromiseStatus]]: "pending", [[PromiseValue]]: undefined}cancel: ()__proto__: Promisecatch: catch()chain: chain()constructor: Promise()then: then()Symbol(Symbol.toStringTag): "Promise"__proto__: Object[[PromiseStatus]]: "resolved"[[PromiseValue]]: Objectid: "aragon"ok: truerev: "1-2be8b128c5c55472b26da530b059ada9"__proto__: Object
+function log(x){console.log(x)}
+undefined
+log
+log(x)
+clezer.info().then(log)
+Promise {[[PromiseStatus]]: "pending", [[PromiseValue]]: undefined}
+Object {doc_count: 1, update_seq: 1, idb_attachment_format: "binary", db_name: "teste", auto_compaction: false}
+clezer.put({_id: 'ramos',age: 30})
+Promise {[[PromiseStatus]]: "pending", [[PromiseValue]]: undefined}
+clezer.info().then(log)
+Promise {[[PromiseStatus]]: "pending", [[PromiseValue]]: undefined}
+Object {doc_count: 2, update_seq: 2, idb_attachment_format: "binary", db_name: "teste", auto_compaction: false}
+clezer.allDocs().then(log)
+Promise {[[PromiseStatus]]: "pending", [[PromiseValue]]: undefined}
+Object {total_rows: 2, offset: 0, rows: Array[2]}offset: 0rows: Array[2]0: Objectid: "aragon"key: "aragon"value: Objectrev: "1-2be8b128c5c55472b26da530b059ada9"__proto__: Object__proto__: Object1: Objectid: "ramos"key: "ramos"value: Object__proto__: Objectlength: 2__proto__: Array[0]concat: concat()constructor: Array()entries: entries()every: every()filter: filter()forEach: forEach()indexOf: indexOf()join: join()keys: keys()lastIndexOf: lastIndexOf()length: 0map: map()pop: pop()push: push()reduce: reduce()reduceRight: reduceRight()reverse: reverse()shift: shift()slice: slice()some: some()sort: sort()splice: splice()toLocaleString: toLocaleString()toString: toString()unshift: unshift()Symbol(Symbol.iterator): ArrayValues()Symbol(Symbol.unscopables): Object__proto__: Objecttotal_rows: 2__proto__: Object
+clezer.allDocs(include_docs: true).then(log)
+Uncaught SyntaxError: missing ) after argument list
+    at Object.InjectedScript._evaluateOn (<anonymous>:905:140)
+    at Object.InjectedScript._evaluateAndWrap (<anonymous>:838:34)
+    at Object.InjectedScript.evaluate (<anonymous>:694:21)
+clezer.allDocs({include_docs: true}).then(log)
+Promise {[[PromiseStatus]]: "pending", [[PromiseValue]]: undefined}
+Object {total_rows: 2, offset: 0, rows: Array[2]}offset: 0rows: Array[2]total_rows: 2__proto__: Object

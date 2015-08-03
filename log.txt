@@ -1,0 +1,6 @@
+[Mon, 03 Aug 2015 19:15:54 GMT] [info] [<0.000.0>] pouchdb-server has started on http://127.0.0.1:5985/
+[Mon, 03 Aug 2015 19:15:54 GMT] [info] [<0.000.0>] navigate to http://127.0.0.1:5985/_utils for the Fauxton UI.
+[Mon, 03 Aug 2015 19:16:40 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 200
+[Mon, 03 Aug 2015 19:17:25 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils 200
+[Mon, 03 Aug 2015 19:19:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils 200
+[Mon, 03 Aug 2015 19:21:18 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils 200
